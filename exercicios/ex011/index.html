@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/Foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/Foto-m.png" type="image/png">
+        <img src="imagens/Foto-g.png" alt="Imagem flexível">
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop> <!--não coloque auto, pois pesa muito o site-->
+        <source src="midia/kazoom-quicasmoreira.mp3" type="audio/mpeg" >
+        <source src="midia/kazoom-quicasmoreira.ogg" type="audio/ogg">
+        <source src="midia/kazoom-quicasmoreira.wav" type="audio/wav"> <!--tentar evitar arquivos .wav pois são muito pesados-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/kazoom-quicasmoreira.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+
+<!--MP3 WAV OGG são os formatos compatíveis com todos os navegadores. Mesmo assim, o autoplay não funcionou-->
+
+    
+</body>
+</html>

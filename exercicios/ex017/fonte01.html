@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas: cm, mm, in, px, pt, pc
+
+            Medidas Relativas: em (rel. tamanho natural), ex (rel. altura x), rem (rel. a fonte do body), vw (rel. ao viewport, tela), vh (rel. altura da viewport), e outras. 
+
+            Para font-size, recomenda-se PX ou EM.
+            Pontos são as medidas do word, por exemplo, que trabalha com pt.
+            A medida padrão normalmente é de 16px.
+            16px geralmente = 1em
+            O EM tem a vantagem de trabalhar com porcentagem da fonte padrão, portanto, a variação entre dispositivos acaba sendo proporcional, automaticamente.
+            */
+            font-size: 1em;
+            font-weight: normal;
+           /* lighter normal bold bolder 
+                Variação númerica: 100-900*/
+            font-style: italic;
+            text-decoration: underline;
+        
+        }
+        h1 {
+            font-family: 'Work Sans';
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+            - font style, font-weight, font-size, font-family
+
+            Substitui as 4 linhas superiores por uma única linha, conforme exemplo abaixo. Não existe pra tudo, mas há em várias situações
+            */
+            font:italic bolder 3em 'Work Sans', sans-serif;
+        }    
+
+        h2{
+            font: italic bolder 3em 'Times New Roman', serif;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex iste praesentium sapiente, pariatur sequi quis explicabo quas, ad eveniet beatae! Dignissimos cupiditate similique earum architecto accusantium excepturi asperiores tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus accusamus voluptatibus nisi, adipisci impedit temporibus rem debitis minima id vel officia ex perferendis ipsa consequatur mollitia sapiente dolorem harum.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis laudantium aperiam quisquam sit. Est perspiciatis delectus vel adipisci possimus atque sint sapiente ex debitis accusantium aperiam, quod fugiat hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus vel adipisci nesciunt asperiores reprehenderit ratione quisquam deserunt, molestias officiis voluptatum quibusdam officia quidem rem eveniet cumque quo! Numquam, excepturi tempore.</p>
+    
+</body>
+</html>
