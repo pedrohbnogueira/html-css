@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
+            
             height: 100vh; /*equivale a 100% do viewport */
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; 
-            
+            background-repeat: repeat;
+            background-size: cover;
             /* temos o CONTAIN que faz com que a imagem seja 100% exibida, contudo cria barras pretas em cima ou lateralmente conforme movimenta-se o tamanho da tela;
             
             temos também o COVER que não exibe 100% da imagem mas ocupa 100% da VP*
@@ -24,6 +24,17 @@
             A melhor opção vai depender o que se quer fazer
             
             */
+            background-attachment: fixed;
+            /*temos SCROLL que é padrão de rolagem (rolou o conteúdo, rolou o fundo junto); FIXED em que o conteúdo rola, mas o fundo não (funciona muito bem com o size scroll)
+
+            */
+
+            /*Shorhand - background:display: color > image > position > repeat > [size] > attachment*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; 
+            /* PROFESSOR EXPLICOU QUE A SHORTHAND SIZE (COVER) NÃO ESTÁ FUNCIONANDO, POR ISSO ELA SÓ FUNCIONA ATÉ O MOMENTO SEM A FUNÇÃO SIZE. Por isso, incluímos abaixo no exemplo*/
+            background-size: cover;
+            
+            
         }
         main{
             background-color: white;
@@ -41,6 +52,13 @@
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea sunt, enim aut quae, recusandae maxime voluptas sequi tenetur itaque magni neque aliquid velit obcaecati dicta perspiciatis repudiandae dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur nihil beatae, sunt rem minus deserunt ipsam architecto sed reprehenderit eum libero, molestias suscipit vero optio sint sapiente aperiam esse?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati incidunt ea rerum sequi quae quisquam, id nihil laboriosam accusantium fugiat nulla earum quidem veniam? Deleniti animi quisquam voluptatum qui?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptate impedit repudiandae omnis, rem ab sunt dolorum voluptates eum quaerat veritatis voluptatem! Praesentium mollitia amet aliquam nesciunt perspiciatis ratione eveniet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa voluptatem magnam nobis tempore accusantium quia reiciendis autem recusandae hic eligendi vero voluptatibus, dignissimos ipsam delectus sunt? Qui, est eveniet.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, consequuntur, facilis cumque dignissimos officia veniam, dicta minus ipsum hic cupiditate laboriosam fugit iste optio unde odio vitae animi modi enim!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur modi veritatis, beatae eius ratione tempora ipsum non iste ipsam earum quae architecto neque alias consectetur impedit id asperiores enim quo!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ad voluptate inventore iure nesciunt aspernatur, eveniet nihil? In, deleniti? Eos at, ullam rem quidem soluta excepturi ut consequuntur tenetur quia.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, magni. Sequi, dolor! Nostrum libero cum esse ipsa a mollitia perferendis qui pariatur. Possimus accusantium alias dolores accusamus voluptatem, pariatur quas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum modi quia molestiae commodi labore, quam cum suscipit, ipsam ut ipsum assumenda error illo soluta sequi vero officia non similique.
         </p>
     </main>
     
