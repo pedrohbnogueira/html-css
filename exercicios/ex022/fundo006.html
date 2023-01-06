@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh; /*equivale a 100% do viewport */
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            
+            /* temos o CONTAIN que faz com que a imagem seja 100% exibida, contudo cria barras pretas em cima ou lateralmente conforme movimenta-se o tamanho da tela;
+            
+            temos também o COVER que não exibe 100% da imagem mas ocupa 100% da VP*
+            
+            Portanto:
+            O background-size aceita: AUTO, que deixa o navegador se virar para exibir a imagem; TAMANHO FIXO EM PX OU % DA TELA; CONTAIN e o COVER.
+
+            A melhor opção vai depender o que se quer fazer
+            
+            */
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea sunt, enim aut quae, recusandae maxime voluptas sequi tenetur itaque magni neque aliquid velit obcaecati dicta perspiciatis repudiandae dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur nihil beatae, sunt rem minus deserunt ipsam architecto sed reprehenderit eum libero, molestias suscipit vero optio sint sapiente aperiam esse?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati incidunt ea rerum sequi quae quisquam, id nihil laboriosam accusantium fugiat nulla earum quidem veniam? Deleniti animi quisquam voluptatum qui?
+        </p>
+    </main>
+    
+</body>
+</html>
